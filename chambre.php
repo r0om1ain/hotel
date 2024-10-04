@@ -79,7 +79,7 @@ if( isset($_GET['action']) ){
                 exit;
             }
             break;
-}
+    }
 }
 
 include "vue/footer.php";

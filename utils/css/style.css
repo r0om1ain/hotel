@@ -1,0 +1,101 @@
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: "Creepster", cursive;
+}
+
+h2 {
+  color: #ff7518;
+  text-align: center;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.alert {
+  background-color: #ffcc00;
+  color: #000;
+  border: 2px solid #ff7518;
+  text-shadow: none;
+}
+
+.card {
+  background-color: #333;
+  border: 2px solid #ff7518;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.card-img-top {
+  border-radius: 15px 15px 0 0;
+}
+
+.btn {
+  border-radius: 10px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.btn-primary {
+  background-color: #ff7518;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #e56a00;
+}
+
+.btn-danger {
+  background-color: #c70000;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #a60000;
+}
+
+.card-body:before {
+  content: "🎃";
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.btn-container .btn {
+  margin-right: 10px;
+}
+
+.btn-container .btn:last-child {
+  margin-right: 0;
+}
+
+h1 {
+  color: #ff7518;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-success {
+  background-color: #ff7518;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #e56a00;
+}
+
+footer {
+  background-color: #000;
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
+}

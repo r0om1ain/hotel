@@ -9,43 +9,41 @@
     Prix <?= $chambre['prix'] ?>€ par nuit.
 
     <p>
-        <div><?= $chambre['nbLits'] ?> Lit(s)</div>
-        <?= $chambre['description'] ?>
+        <div><Strong>Nombres de lit : </Strong><?= $chambre['nbLits'] ?> Lit(s)</div>
+        <div><Strong>Description : </Strong><?= $chambre['description'] ?></div>
     </p>
 
     <div>
-        <form action="reservation.php" method="post">
+        <h2 class="text-center">Créer une Réservation</h2>
+
+        <form action="reservation.php?action=ajouter" method="post">
+            <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" class="form-control" name="prenom" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" class="form-control" name="nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tel">Téléphone</label>
+                <input type="text" class="form-control" name="tel" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dateArrivee">Date d'Arrivée</label>
+                <input type="date" class="form-control" name="dateArrivee" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dateDepart">Date de Départ</label>
+                <input type="date" class="form-control" name="dateDepart" required>
+            </div>
 
             <input type="hidden" name="numChambre" value="<?= $_GET['id'] ?>">
 
-            <div class="form-group">
-                <label for="">Prénom</label>
-                <input type="text" class="form-control" name="prenom">
-            </div>
-            
-            <div class="form-group">
-                <label for="">Nom</label>
-                <input type="text" class="form-control" name="nom">
-            </div>
-            
-            <div class="form-group">
-                <label for="">Téléphone</label>
-                <input type="text" class="form-control" name="tel">
-            </div>
-
-            
-            <div class="form-group">
-                <label for="">Date Arrivée</label>
-                <input type="date" class="form-control" name="dateArrivee">
-            </div>
-            
-            <div class="form-group">
-                <label for="">Date départ</label>
-                <input type="date" class="form-control" name="dateDepart">
-            </div>
-
-            <input type="submit" class="btn btn-outline-success mt-2">
-
-
+            <button type="submit" class="btn btn-primary mt-2">Réserver</button>
         </form>
     </div>
